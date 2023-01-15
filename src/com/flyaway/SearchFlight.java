@@ -29,20 +29,14 @@ public class SearchFlight extends HttpServlet {
 		Search.persons = Integer.parseInt(request.getParameter("persons"));
 
 		if (Search.date.equals("")) {
-
 			out.println("Please enter a valid date");
 		} else {
-			// out.println(Search.date);
 			Search.day = getDay(Search.date);
-			// out.println(Search.day);
 			response.sendRedirect("SearchResult.jsp");
 		}
-
 	}
 
 	public String getDay(String dateInp) {
-
-		// ZonedDateTime d = ZonedDateTime.parse(dateInp);
 		LocalDate dt = LocalDate.parse(dateInp);
 		return dt.getDayOfWeek().toString();
 	}
