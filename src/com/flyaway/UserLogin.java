@@ -26,21 +26,12 @@ public class UserLogin extends HttpServlet {
 		String email = request.getParameter("password");
 
 		PrintWriter out = response.getWriter();
-
-		//System.out.println(email + " " + name);
-
 		Logindao logindao = new Logindao();
 
 		if (logindao.check(name, email)) {
-
 			response.sendRedirect("SearchFlight.jsp");
-
 		} else {
-
 			out.println("User Not Logged In");
-
 		}
-
 	}
-
 }
