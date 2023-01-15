@@ -34,15 +34,10 @@ public class UserRegistration extends HttpServlet {
 		} else {
 			if (uregdao.check(name, email, pass)) {
 				out.println("User Registered Successfully");
-				// if regsitered successfully then redirect to User Login.jsp
 				response.sendRedirect("ULogin.jsp");
-
 			} else {
 				out.println("User Not Registered");
-				// response.sendRedirect("ULogin.jsp");
 			}
 		}
-
 	}
-
 }
