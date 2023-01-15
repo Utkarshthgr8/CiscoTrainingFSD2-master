@@ -9,9 +9,8 @@
 <body>
 
 	<div>
-
 		<h3 style="text-align: center;">Welcome to FlyAway !</h3>
-		<p >
+		<p>
 		<pre style="text-align: center;">
 .        __!__        .
 .    _____(_)_____    .
@@ -31,33 +30,21 @@
 			<a href="UserRegister.jsp"> Sign Up </a>
 		</p>
 
-
-
-
 	</div>
 
 	<div>
-
 		Are you Registered ? Login to Book Flight
-
 		<p>
 			<a href="ULogin.jsp"> Sign In</a>
 		</p>
-
-
 	</div>
 
 	<div>
-
 		Are you Admin ?
-
 		<p>
 			<a href="AdminLogin.jsp">Admin Login</a>
 		</p>
-
-
 	</div>
-
 
 </body>
 </html>
