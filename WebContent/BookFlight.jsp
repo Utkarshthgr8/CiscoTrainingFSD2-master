@@ -14,19 +14,18 @@ Booking.flight_name = request.getParameter("name");
 <title>Booking Details</title>
 </head>
 <body>
-
 	<div>
-	<div class="row">
-		<div class="col">
-			<h1 align="center">
-				<b>Booking Details</b>
-			</h1>
-			<p align="center">
-				<span><strong>Enter Passenger Details</strong></span>
-			</p>
-			<br>
+		<div class="row">
+			<div class="col">
+				<h1 align="center">
+					<b>Booking Details</b>
+				</h1>
+				<p align="center">
+					<span><strong>Enter Passenger Details</strong></span>
+				</p>
+				<br>
+			</div>
 		</div>
-	</div>
 	</div>
 	<form action="${pageContext.request.contextPath}/Payment.jsp"
 		method="post" class="form-container">
@@ -45,6 +44,5 @@ Booking.flight_name = request.getParameter("name");
 		<br>
 		<button type="submit" value="Submit">Submit</button>
 	</form>
-
 </body>
 </html>
